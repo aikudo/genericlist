@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.1 2014-05-25 13:17:09-07 - - $
+# $Id: Makefile,v 1.2 2014-05-25 13:19:06-07 - - $
 
 # By default, gmake sets the variable ${CXX}=g++ on a Linux system.
 # To use Sun Studio C++ (CC), set the variable CXX=CC, either on
@@ -19,7 +19,7 @@ CPPHEADER   = listmap.h trace.h util.h xless.h xpair.h
 TEMPLATES   = listmap.tcc util.tcc
 CPPSOURCE   = trace.cpp util.cpp main.cpp
 ALLCPPSRC   = ${CPPHEADER} ${TEMPLATES} ${CPPSOURCE}
-OBJECTS     = ${CPPSOURCE:.cpp=.o}
+OBJECTS     = ${CPPSOURCE:.cpp=.o} listmap.o
 EXECBIN     = keyvalue
 OTHERS      = ${MKFILE} README
 ALLSOURCES  = ${ALLCPPSRC} ${OTHERS}
