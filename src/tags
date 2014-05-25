@@ -1,0 +1,91 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALLCPPSRC	Makefile	/^ALLCPPSRC   = ${CPPHEADER} ${TEMPLATES} ${CPPSOURCE}$/;"	m
+ALLSOURCES	Makefile	/^ALLSOURCES  = ${ALLCPPSRC} ${OTHERS}$/;"	m
+CLASS	Makefile	/^CLASS       = cmps109-wm.s14$/;"	m
+COMPILECPP	Makefile	/^COMPILECPP  = g++ -g -O0 -Wall -Wextra -std=gnu++11$/;"	m
+CPPHEADER	Makefile	/^CPPHEADER   = listmap.h trace.h util.h xless.h xpair.h$/;"	m
+CPPSOURCE	Makefile	/^CPPSOURCE   = trace.cpp util.cpp main.cpp$/;"	m
+DEPFILE	Makefile	/^DEPFILE     = ${MKFILE}.dep$/;"	m
+EXECBIN	Makefile	/^EXECBIN     = keyvalue$/;"	m
+GMAKE	Makefile	/^GMAKE       = ${MAKE} --no-print-directory$/;"	m
+LISTING	Makefile	/^LISTING     = Listing.ps$/;"	m
+MAKEDEPCPP	Makefile	/^MAKEDEPCPP  = g++ -MM$/;"	m
+MKFILE	Makefile	/^MKFILE      = Makefile$/;"	m
+NEEDINCL	Makefile	/^NEEDINCL    = ${filter ${NOINCL}, ${MAKECMDGOALS}}$/;"	m
+NOINCL	Makefile	/^NOINCL      = ci clean spotless$/;"	m
+OBJECTS	Makefile	/^OBJECTS     = ${CPPSOURCE:.cpp=.o} listmap.o$/;"	m
+OTHERS	Makefile	/^OTHERS      = ${MKFILE} README$/;"	m
+PROJECT	Makefile	/^PROJECT     = asg4$/;"	m
+TEMPLATES	Makefile	/^TEMPLATES   = listmap.tcc util.tcc$/;"	m
+TRACE	trace.h	43;"	d
+__LISTMAP_H__	listmap.h	4;"	d
+__TRACE_H__	trace.h	4;"	d
+__UTIL_H__	util.h	10;"	d
+__XLESS_H__	xless.h	4;"	d
+__XPAIR_H__	xpair.h	4;"	d
+boolvec	trace.cpp	/^typedef vector<char> boolvec;$/;"	t	file:
+cleanup	util.cpp	/^void sys_info::cleanup(){$/;"	f	class:sys_info
+complain	util.cpp	/^ostream& complain() {$/;"	f
+datestring	util.cpp	/^const string datestring () {$/;"	f
+decode	main.cpp	/^opr decode(const string & line){$/;"	f
+execname	util.cpp	/^string *sys_info::execname = NULL; \/\/ Must be initialized from main().$/;"	m	class:sys_info	file:
+execname	util.h	/^      static string* execname;$/;"	m	class:sys_info
+exit_status	util.cpp	/^int sys_info::exit_status = EXIT_SUCCESS;$/;"	m	class:sys_info	file:
+exit_status	util.h	/^      static int exit_status;$/;"	m	class:sys_info
+first	xpair.h	/^   First first;$/;"	m	struct:xpair
+flags	trace.h	/^      static vector<char> flags;$/;"	m	class:traceflags
+get_execname	util.cpp	/^const string& sys_info::get_execname () {$/;"	f	class:sys_info
+get_exit_status	util.cpp	/^int sys_info::get_exit_status () {$/;"	f	class:sys_info
+getflag	trace.cpp	/^bool traceflags::getflag (char flag) {$/;"	f	class:traceflags
+head	listmap.h	/^      node* head;$/;"	m	class:listmap
+iterator	listmap.h	/^      iterator(): map(NULL), where(NULL) {}$/;"	f	class:listmap::iterator
+iterator	listmap.h	/^class listmap<Key,Value,Less>::iterator {$/;"	c	class:listmap
+key_type	listmap.h	/^      typedef Key key_type;$/;"	t	class:listmap
+less	listmap.h	/^      Less less;$/;"	m	class:listmap
+listmap	listmap.h	/^class listmap {$/;"	c
+ltrim	util.h	/^static inline std::string &ltrim(std::string &s) {$/;"	f
+main	main.cpp	/^int main (int argc, char** argv) {$/;"	f
+map	listmap.h	/^      listmap<Key,Value,Less>* map;$/;"	m	class:listmap::iterator
+mapped_type	listmap.h	/^      typedef Value mapped_type;$/;"	t	class:listmap
+next	listmap.h	/^         node* next;$/;"	m	struct:listmap::node
+node	listmap.h	/^      struct node {$/;"	s	class:listmap
+op_delkey	main.cpp	/^   op_delkey,$/;"	e	enum:opr	file:
+op_noop	main.cpp	/^   op_noop,$/;"	e	enum:opr	file:
+op_printall	main.cpp	/^   op_printall,$/;"	e	enum:opr	file:
+op_printallkey	main.cpp	/^   op_printallkey$/;"	e	enum:opr	file:
+op_readkey	main.cpp	/^   op_readkey,$/;"	e	enum:opr	file:
+op_setkey	main.cpp	/^   op_setkey,$/;"	e	enum:opr	file:
+operator !=	listmap.h	/^      inline bool operator!= (const iterator& that) const {$/;"	f	class:listmap::iterator
+operator ()	xless.h	/^   bool operator() (const Type& left, const Type& right) const {$/;"	f	struct:xless
+operator <<	xpair.h	/^ostream& operator<< (ostream& out, const xpair<First,Second>& pair) {$/;"	f
+opr	main.cpp	/^typedef enum opr {$/;"	g	file:
+opr	main.cpp	/^}opr;$/;"	t	typeref:enum:opr	file:
+pair	listmap.h	/^         value_type pair;$/;"	m	struct:listmap::node
+prev	listmap.h	/^         node* prev;$/;"	m	struct:listmap::node
+printkeyval	pkeyvalue.perl	/^sub printkeyval ($) {$/;"	s
+rtrim	util.h	/^static inline std::string &rtrim(std::string &s) {$/;"	f
+scan_options	main.cpp	/^void scan_options (int argc, char** argv) {$/;"	f
+second	xpair.h	/^   Second second;$/;"	m	struct:xpair
+set_execname	util.cpp	/^void sys_info::set_execname (const string& argv0) {$/;"	f	class:sys_info
+set_exit_status	util.cpp	/^void sys_info::set_exit_status (int status) {$/;"	f	class:sys_info
+setflags	trace.cpp	/^void traceflags::setflags (const string& optflags) {$/;"	f	class:traceflags
+split	util.cpp	/^list<string> split (const string& line, const string& delimiters) {$/;"	f
+str_str_map	main.cpp	/^typedef listmap<string,string> str_str_map;$/;"	t	file:
+str_str_pair	main.cpp	/^typedef xpair<string,string> str_str_pair;$/;"	t	file:
+sys_info	util.h	/^class sys_info {$/;"	c
+sys_info_error	util.cpp	/^void sys_info_error (const string& condition) {$/;"	f
+syscall_error	util.cpp	/^void syscall_error (const string& object) {$/;"	f
+tail	listmap.h	/^      node* tail;$/;"	m	class:listmap
+traceflags	trace.h	/^class traceflags {$/;"	c
+trim	util.h	/^static inline std::string &trim(std::string &s) {$/;"	f
+value_type	listmap.h	/^      typedef xpair<key_type,mapped_type> value_type;$/;"	t	class:listmap
+where	listmap.h	/^      node* where;$/;"	m	class:listmap::iterator
+xless	xless.h	/^struct xless {$/;"	s
+xpair	xpair.h	/^   xpair (const First& first, const Second& second):$/;"	f	struct:xpair
+xpair	xpair.h	/^   xpair(): first(First()), second(Second()) {}$/;"	f	struct:xpair
+xpair	xpair.h	/^struct xpair {$/;"	s
