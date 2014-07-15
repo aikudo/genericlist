@@ -1,8 +1,6 @@
 #!/usr/bin/perl
 # $Id: pkeyvalue.perl,v 1.1 2010-02-12 13:40:44-08 - - $
 #
-# Documentation:  see assignment specifications.
-#
 use strict;
 use warnings;
 
